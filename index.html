@@ -1,141 +1,382 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>پروپوزال استراتژی افزایش فروش B2C</title>
-    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css" rel="stylesheet" type="text/css" />
-    <style>
-        body {
-            font-family: 'Vazir', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
-            line-height: 1.8;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        header {
-            background-color: #007BFF;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-            border-radius: 8px;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 1.8rem;
-        }
-        section {
-            margin: 20px 0;
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        section h2 {
-            margin-top: 0;
-            font-size: 1.5rem;
-            color: #007BFF;
-        }
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            color: white;
-            background: #28a745;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1rem;
-        }
-        .btn:hover {
-            background: #218838;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background: #007BFF;
-            color: white;
-            margin-top: 20px;
-            border-radius: 8px;
-        }
-        .icon {
-            margin-right: 10px;
-            vertical-align: middle;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Hossein Darestani's professional CMO resume showcasing leadership, strategic marketing, and digital transformation excellence." />
+  <title>Hossein Darestani | CMO Resume</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Animate.css for animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- AOS (Animate On Scroll) Library -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <style>
+    /* Global Reset & Typography */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Header (Non-Sticky) */
+    header {
+      background: linear-gradient(135deg, #004d99, #007acc);
+      color: #fff;
+      padding: 20px 10px;
+      text-align: center;
+    }
+    /* Profile Image Styling */
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #fff;
+      margin-bottom: 15px;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+    }
+
+    /* Sticky Navigation Only */
+    .sticky-nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: linear-gradient(135deg, #004d99, #007acc);
+      padding: 10px 0;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    .sticky-nav a {
+      color: #fff;
+      margin: 5px 15px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+      font-size: 0.95rem;
+    }
+    .sticky-nav a i {
+      margin-right: 5px;
+    }
+    .sticky-nav a:hover {
+      color: #ffcc00;
+    }
+
+    /* Main Content Container */
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      animation: fadeInUp 1.5s;
+    }
+    .section {
+      margin-bottom: 50px;
+    }
+    .section h2 {
+      text-align: center;
+      color: #004d99;
+      margin-bottom: 20px;
+      position: relative;
+    }
+    .section h2::after {
+      content: "";
+      width: 60px;
+      height: 4px;
+      background: linear-gradient(90deg, #004d99, #007acc);
+      display: block;
+      margin: 10px auto;
+      border-radius: 2px;
+    }
+
+    /* Professional Summary */
+    #summary p {
+      font-size: 1.1rem;
+      text-align: center;
+      padding: 0 20px;
+      margin-bottom: 20px;
+    }
+
+    /* Cards for Experience & Education */
+    .card {
+      background: #e6f0ff;
+      padding: 15px;
+      border-left: 5px solid #004d99;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateX(10px);
+    }
+
+    /* Key Achievements Section */
+    .achievements {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .achievement {
+      background: linear-gradient(135deg, #007acc, #004d99);
+      color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    .achievement:hover {
+      transform: scale(1.05);
+    }
+    .achievement h4 {
+      margin-bottom: 10px;
+    }
+
+    /* Core Competencies */
+    .competencies {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+    .competency {
+      background: #004d99;
+      color: #fff;
+      padding: 8px 20px;
+      border-radius: 20px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+    .competency:hover {
+      background: #007acc;
+    }
+
+    /* Leadership & Community Involvement */
+    #leadership p {
+      padding: 0 20px;
+      font-size: 1.1rem;
+      text-align: center;
+    }
+
+    /* Contact Section */
+    .contact p {
+      margin: 10px 0;
+      font-size: 1.1rem;
+      text-align: center;
+    }
+    .download-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: linear-gradient(90deg, #004d99, #007acc);
+      color: #fff;
+      border: none;
+      border-radius: 25px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+    .download-btn:hover {
+      background: linear-gradient(90deg, #007acc, #004d99);
+      transform: translateY(-3px);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      background: #004d99;
+      color: #fff;
+      margin-top: 40px;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .sticky-nav a {
+        margin: 8px 10px;
+        font-size: 0.9rem;
+      }
+      .container {
+        padding: 20px;
+      }
+    }
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+      .section h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
 </head>
 <body>
+  <!-- Header with Profile Image (Non-Sticky) -->
+  <header class="animate__animated animate__fadeInDown">
+    <img src="https://media.licdn.com/dms/image/v2/D4D03AQF7N5XC31gnHA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1715494703295?e=1747267200&v=beta&t=COOrCVauG18h3jJLfnZwi4X3H-0CZs3jvDRzFVruYCY" alt="Profile Picture" class="profile-img">
+    <h1>Hossein Darestani</h1>
+    <p>Chief Marketing Officer</p>
+  </header>
 
-<header>
-    <h1>پروپوزال استراتژی افزایش فروش B2C</h1>
-</header>
+  <!-- Sticky Navigation Only -->
+  <nav class="sticky-nav animate__animated animate__fadeInDown">
+    <a href="#summary"><i class="fa-solid fa-user"></i> Summary</a>
+    <a href="#achievements"><i class="fa-solid fa-trophy"></i> Achievements</a>
+    <a href="#experience"><i class="fa-solid fa-briefcase"></i> Experience</a>
+    <a href="#competencies"><i class="fa-solid fa-chart-line"></i> Competencies</a>
+    <a href="#education"><i class="fa-solid fa-graduation-cap"></i> Education</a>
+    <a href="#leadership"><i class="fa-solid fa-users"></i> Leadership</a>
+    <a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a>
+  </nav>
 
-<div class="container">
-    <section>
-        <h2>سناریو پیشنهادی</h2>
-        <p>
-            با توجه به اینکه مزیت رقابتی ما در حوزه زیرساخت نیست و مشتریان ما حساسیت کمتری نسبت به هزینه‌ها دارند، 
-            پیشنهاد می‌کنیم خدمات امنیتی را به عنوان ارزش افزوده به مشتریان ارائه دهیم. این خدمات شامل:
-        </p>
-        <ul>
-            <li><img src="https://img.icons8.com/ios-filled/50/007BFF/shield.png" class="icon"> ارائه تست نفوذ اولیه رایگان به مشتریان جدید.</li>
-            <li><img src="https://img.icons8.com/ios-filled/50/007BFF/document.png" class="icon"> ارائه گزارش جامع از تست‌ها و آسیب‌پذیری‌ها.</li>
-            <li><img src="https://img.icons8.com/ios-filled/50/007BFF/settings.png" class="icon"> امن‌سازی کسب‌وکار با هزینه‌های برآوردی و مقیاس‌پذیر.</li>
-        </ul>
+  <!-- Main Content Container -->
+  <div class="container">
+    <!-- Professional Summary Section -->
+    <section id="summary" class="section" data-aos="fade-up">
+      <h2>Professional Summary</h2>
+      <p>A dynamic and innovative marketing leader with over a decade of experience driving revenue growth, digital transformation, and brand development. Adept at strategizing and executing high-impact marketing campaigns while fostering cross-functional collaboration and delivering measurable results.</p>
     </section>
 
-    <section>
-        <h2>مدل کسب‌وکار</h2>
-        <p>
-            پیش‌بینی می‌کنیم این طرح:
-        </p>
-        <ul>
-            <li>از ۱۷۰ سرور فعال، حدود ۳۰ مشتری را در ماه اول جذب کند که درآمدی بالغ بر ۶ میلیون تومان ایجاد خواهد کرد.</li>
-            <li>از ۱۰۰ تست نفوذ اولیه برای مشتریان جدید، درآمدی ۵.۶ میلیون تومانی در ماه اول حاصل می‌شود.</li>
-            <li>این درآمدها در ماه‌های آینده تکرار خواهند شد و می‌توانند با مقیاس‌پذیری افزایش یابند.</li>
-        </ul>
+    <!-- Key Achievements Section -->
+    <section id="achievements" class="section" data-aos="fade-up">
+      <h2>Key Achievements</h2>
+      <div class="achievements">
+        <div class="achievement">
+          <h4>Record Growth Campaign</h4>
+          <p>Led a cross-functional team to achieve a 45% increase in annual revenue through innovative digital strategies and market expansion initiatives.</p>
+        </div>
+        <div class="achievement">
+          <h4>Brand Revitalization</h4>
+          <p>Orchestrated a comprehensive rebranding project that elevated the company’s market position and increased brand recognition significantly.</p>
+        </div>
+        <div class="achievement">
+          <h4>Digital Transformation</h4>
+          <p>Pioneered digital initiatives that streamlined operations and improved customer engagement across multiple channels.</p>
+        </div>
+      </div>
     </section>
 
-    <section>
-        <h2>پلن اجرایی</h2>
-        <p>مراحل اجرایی این طرح به شرح زیر است:</p>
-        <ol>
-            <li><img src="https://img.icons8.com/ios-filled/50/007BFF/checkmark.png" class="icon"> آماده‌سازی زیرساخت‌های لازم برای اجرای تست نفوذ.</li>
-            <li><img src="https://img.icons8.com/ios-filled/50/007BFF/email-open.png" class="icon"> ارسال ایمیل به مشتریان فعلی و جدید با متن زیر:</li>
-        </ol>
-        <blockquote>
-            <strong>موضوع:</strong> امنیت کسب‌وکار شما، اولویت ماست!<br>
-            <p>سلام [نام مشتری محترم]،</p>
-            <p>
-                آیا به امنیت داده‌ها و زیرساخت‌های خود فکر کرده‌اید؟ ما در ابرآراز خدماتی ویژه برای افزایش امنیت کسب‌وکار شما ارائه می‌دهیم:
-            </p>
-            <ul>
-                <li>تست نفوذ اولیه رایگان برای مشتریان جدید.</li>
-                <li>گزارش جامع از وضعیت امنیتی سرورها.</li>
-                <li>امکان امن‌سازی حرفه‌ای با هزینه برآوردی متناسب.</li>
-            </ul>
-            <p>برای شروع، کافی است با ما تماس بگیرید یا از طریق لینک زیر درخواست خود را ثبت کنید:</p>
-            <a href="#" class="btn">مشاوره رایگان</a>
-        </blockquote>
-        <p>3. جمع‌آوری بازخوردها و تحلیل نتایج برای بهینه‌سازی طرح.</p>
+    <!-- Experience Section -->
+    <section id="experience" class="section" data-aos="fade-up">
+      <h2>Experience</h2>
+      <div class="card">
+        <strong>Marketing Manager</strong> - ArazCloud | ابر آراز (Remote)  
+        <br>Mar 2024 - Present | 1 yr 1 mo  
+        <br>Business Marketing, Strategic Marketing Management
+      </div>
+      <div class="card">
+        <strong>Marketing Manager</strong> - Irasane (Remote)  
+        <br>Aug 2023 - Present | 1 yr 8 mos  
+        <br>Business Marketing, Strategic Marketing Management
+      </div>
+      <div class="card">
+        <strong>Technology Developer</strong> - Ilkan  
+        <br>Jan 2023 - May 2024 | 1 yr 5 mos  
+        <br>Debugging, Research, and +10 skills
+      </div>
+      <div class="card">
+        <strong>Digital Transformation Officer</strong> - Ilkan (Full-time)  
+        <br>Apr 2021 - Aug 2023 | 2 yrs 5 mos  
+        <br>Project Management, Analytical Skills
+      </div>
+      <div class="card">
+        <strong>Software Developer</strong> - A+ Solution GmbH (Remote)  
+        <br>Nov 2022 - Feb 2024 | 1 yr 4 mos  
+        <br>Software Engineering & Development
+      </div>
+      <div class="card">
+        <strong>Product Manager</strong> - Vision Tarh Rasam (Full-time)  
+        <br>Apr 2021 - Nov 2021 | 8 mos  
+        <br>Product Design & Strategy
+      </div>
     </section>
 
-    <section>
-        <h2>نتیجه‌گیری</h2>
-        <p>
-            این طرح می‌تواند با نرخ اقبال ۲۰٪ برای مشتریان فعلی و جدید، درآمد پایداری ایجاد کند و در صورت موفقیت، 
-            با ارسال ایمیل‌های بیشتر به تعداد بیشتری از کاربران مقیاس یابد.
-        </p>
+    <!-- Core Competencies Section -->
+    <section id="competencies" class="section" data-aos="fade-up">
+      <h2>Core Competencies</h2>
+      <div class="competencies">
+        <div class="competency">Strategic Marketing</div>
+        <div class="competency">Digital Transformation</div>
+        <div class="competency">Brand Development</div>
+        <div class="competency">Market Analysis</div>
+        <div class="competency">Cross-Functional Leadership</div>
+        <div class="competency">Product Innovation</div>
+      </div>
     </section>
-</div>
 
-<footer>
-    <p>تمامی حقوق محفوظ است © ابرآراز ۲۰۲۵</p>
-</footer>
+    <!-- Education Section -->
+    <section id="education" class="section" data-aos="fade-up">
+      <h2>Education</h2>
+      <div class="card">
+        <strong>Bachelor of Management, Industrial Management</strong>  
+        <br>University of Tehran | 2018 - 2022
+      </div>
+      <div class="card">
+        <strong>Allameh Helli School</strong>
+      </div>
+    </section>
 
+    <!-- Leadership & Community Involvement Section -->
+    <section id="leadership" class="section" data-aos="fade-up">
+      <h2>Leadership & Community Involvement</h2>
+      <p>Active board member in industry associations and a mentor for emerging marketing professionals. Committed to community engagement through strategic partnerships and philanthropic initiatives.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact" data-aos="fade-up">
+      <h2>Contact Information</h2>
+      <p><i class="fa-solid fa-envelope"></i> Email: <a href="mailto:hsdf7rb@gmail.com">hsdf7rb@gmail.com</a></p>
+      <p><i class="fa-solid fa-phone"></i> Phone & WhatsApp: +98-991-0938-033</p>
+      <p><i class="fa-brands fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/hsdarestani/" target="_blank">linkedin.com/in/hsdarestani</a></p>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="animate__animated animate__fadeInUp">
+    <p>&copy; 2025 Hossein Darestani. All rights reserved.</p>
+  </footer>
+
+  <!-- AOS Animation Script -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true
+    });
+  </script>
 </body>
 </html>
